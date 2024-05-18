@@ -1,0 +1,26 @@
+
+.contentActive{
+    width: 90%;
+}
+.contentNoActive{
+    width: 80%;
+}
+.content{
+    background-color: var(--coverd);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    border-radius: 0px 60px 0px 0px;
+    padding: 0.5% 0% 10px 0; 
+    overflow: auto;
+}
+@media screen and (max-width:400px){
+    .contentActive{
+        width: 80%;
+    }
+    .contentNoActive{
+        width: 70%;
+    }
+
+}

@@ -1,0 +1,63 @@
+.inputDates {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.inputDates input {
+    width: 70%;
+    cursor: pointer;
+}
+.dateBox {
+    Width: 47.5%;
+    height: 40px;
+    padding: 10px;
+    background: var(--coverd);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+}
+.dateBox:hover{
+    border: 1px solid rgb(102, 102, 247);
+}
+.dateBox>input {
+    border: none !important;
+    cursor: auto;
+}
+.dateBox>input:hover {
+    border: none !important;
+}
+
+.dateBox > input[type="date"]::-webkit-calendar-picker-indicator {
+   border: none !important;
+   cursor: pointer;
+}
+/* .dateBox > input::-webkit-datetime-edit-day-field {
+    display: none;
+}
+
+.dateBox > input::-webkit-datetime-edit-month-field {
+    display: none;
+}
+
+.dateBox > input::-webkit-datetime-edit-year-field {
+    display: none;
+} */
+@media screen and (max-width:680px){
+    .inputDates {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .dateBox{
+        width: 60%;
+    }
+}
+@media screen and (max-width:330px){
+    .inputDates {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .dateBox{
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 80px;
+    }
+}

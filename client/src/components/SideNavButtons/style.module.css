@@ -1,0 +1,23 @@
+.btu{
+    background-color: transparent;
+    border: 0;
+    font-size: 35px;
+    flex-direction: column;
+    color: #fff;
+    padding: 5px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btu:hover{
+    background: var(--silver2);
+}
+#homeBtu{
+    color: var(--secondary);
+    margin-bottom: 100px;
+}
+.btu span{
+    font-size: 15px;
+}
+.active{
+    background: var(--silver2) !important;
+}

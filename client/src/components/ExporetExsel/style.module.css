@@ -1,0 +1,14 @@
+.form{
+    gap: 8px;
+}
+
+.form input{
+    /* background-color: var(--silver); */
+    height: 35px;
+    border: 1px solid black;
+    border-radius: var(--radius);
+    padding: 8px;
+}
+.form button{
+    background-color: #28a745 !important;
+}

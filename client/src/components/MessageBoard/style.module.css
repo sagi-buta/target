@@ -1,0 +1,167 @@
+/* Carousel.module.css
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #333;
+  }
+   */
+
+/* Carousel.module.css */
+
+/* סגנון ראשי של הקרוסלה */
+
+
+
+
+.carousel-container {
+  width: 96%;
+  margin: 0 auto;
+  /* min-height: 90%; */
+
+}
+
+/* סגנון המודעות */
+.carouselitem {
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid var(--ad-border-color, #ccc);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: var(--ad-text-color, #333);
+  height: 26vh;
+}
+
+.msg {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 99.5%;
+  justify-content: center;
+}
+
+.msgheader {
+  display: flex;
+  width: 90%;
+  align-items: start;
+}
+
+.msgcontent {
+  text-align: center;
+  min-height: 45%;
+  max-height: 60%;
+  background-color: #fff;
+  width: 90%;
+  max-width: 95%;
+  overflow: auto;
+  display: inline-block;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.msgcontent::-webkit-scrollbar {
+  width: 0px;
+}
+
+.msgcontent {
+  scrollbar-width: none;
+}
+
+.msgbtns {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* כותרת המודעה */
+.carouselitem h2 {
+  color: var(--ad-title-color, #333);
+}
+
+/* תאריך ותוכן המודעה */
+.carouselitem p {
+  color: var(--ad-text-color, #333);
+}
+
+/* כפתורים */
+.carouselitem button {
+  background-color: var(--button-background-color, #007bff);
+  color: var(--button-text-color, #fff);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.add-ad-container2 button {
+  background-color: var(--button-background-color, #007bff);
+  color: var(--button-text-color, #fff);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+
+}
+
+.add-ad-container2 button:hover {
+  background-color: var(--button-hover-color, #0056b3);
+}
+
+.carouselitem button:hover {
+  background-color: var(--button-hover-color, #0056b3);
+}
+
+.add-ad-container2 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: var(--primary);
+  gap: 10px;
+  padding: 20px;
+}
+
+.add-ad-container {
+  display: flex;
+  width: 97%;
+  align-items: end;
+  padding: 0;
+}
+
+/* צבע רקע של כפתור ההוספה */
+.add-ad-container>button {
+
+  z-index: 20;
+  background-color: var(--button-background-color, #007bff);
+  color: var(--button-text-color, #fff);
+  border: none;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.add-ad-container button:hover {
+  background-color: var(--add-button-hover-color, #0056b3);
+}

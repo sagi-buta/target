@@ -1,0 +1,71 @@
+
+.hiro{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 30px;
+}
+.haeder{
+    width: 100%;
+    gap: 100px;
+    height: 30%;
+}
+.filtersContainer{
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+.filtersContainer>div{
+    width: 100%;
+    gap: 8px;
+    
+}
+.filtersContainer>div>select{
+    width: 60%;
+}
+.filtersContainer input{
+    height: 30px;
+}
+
+.filter{
+    width: 100%;
+}
+.tableSelf{
+    width: fit-content;
+    padding: 0;
+    background: var(--silver2);
+    position: relative;
+    overflow: auto;
+    flex-direction: column !important;
+    
+}
+.tableSelf td{
+    padding: 4px 20px;
+}
+.tableSelf a {
+    text-decoration: none;
+    color: black;
+}
+
+.tableSelf tbody{
+    width: 100%;
+}
+
+.tableSelf>tbody>tr:first-child{
+    cursor: grabbing;
+    font-weight:900;
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+}
+.tableSelf>tbody>tr:first-child:hover{
+    background-color: aliceblue !important;
+}
+.tableSelf>tbody>tr:hover{
+    background-color: var(--silver);
+
+}
+#deleteBtu{
+    background-color: rgba(255, 0, 0, 0.508);
+}

@@ -1,0 +1,12 @@
+.title{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    position: relative;
+    height: 50%;
+    gap: 8px;
+}
+.title>h5{
+    position: sticky;
+    top: 0;
+}

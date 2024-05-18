@@ -1,0 +1,55 @@
+.notChecked {
+    gap: 5px;
+}
+
+.checked {
+    gap: 5px;
+    text-decoration: line-through;
+}
+
+.circularCheckbox {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.circularCheckbox:checked {
+    background-color: rgba(0, 0, 0, 0.242);
+}
+
+.hideDate {
+    display: none;
+}
+
+.hideDate2 {
+    display: none;
+}
+
+.showDate {
+    display: flex;
+    font-weight: 700;
+    gap: 3px;
+    
+}
+
+.showDate:hover+.hideDate {
+    justify-content: space-between;
+
+    display:flex;
+
+}
+@media screen and (max-width:600px){
+    .showDate {
+        gap: 0;
+        font-size: 8px ;
+    }
+
+}

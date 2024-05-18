@@ -1,0 +1,258 @@
+.hiro{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.header{
+    width: 95%;
+    height: 20%;
+    justify-content: start !important;
+    gap: 30px;
+    
+}
+.header>div{
+    gap: 15px;
+}
+.header h3{
+    margin: 0 ;
+    font-weight: 650;
+}
+.header h4{
+    font-size: 25px;
+    font-weight: 700;
+}
+.main{
+    width: 99%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--silver2);
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+.main::-webkit-scrollbar {
+    display: none;
+}
+.mainRight{
+    width: 45%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start ;
+    padding: 30px;
+    gap: 15px;
+}
+.main h4{
+    margin: 0;
+    width: 100%;
+    text-align: start;
+    font-weight: 650;
+}
+
+
+.selectButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+
+.selectButtons div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.days{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.days div{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 25px;
+}
+.inputDisplay{
+    border-radius: 15px;
+    text-align:right;
+    border: none;
+    padding: 15px;
+    box-shadow: var(--shadow) ;
+    width: 80%;
+}
+/* ----------------------------------------------------------------------------------------------------------------- */
+.mainLeft{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    gap: 18px;
+    padding: 15px 10px;
+
+}
+.mainLeft input:hover{
+    border: 1px solid blue !important;
+}
+/* ----------------inputsDates-------------- */
+.inputsDates{
+    display: flex;
+    gap: 5%;
+}
+.inputsDates>h4{
+    margin-top: 8px;
+    width: 15%;
+    text-align: right;
+}
+
+/*  -------------serchInputs--------------*/
+.serchInputs{
+    width: 100%;
+    padding: 15px 0;
+    height: fit-content;
+    justify-content: space-between !important;
+    align-items: start !important;
+}
+.serchInputs>div{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputNumHours{
+    flex-direction: column;
+    gap: 15px;
+}
+.inputNumHours h4{
+    text-align: center;
+}
+.inputsTecherAndMeetings{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.inputsTecherAndMeetings>div{
+    width: 45%;
+    display: flex;
+    flex-direction: column !important;
+    gap: 5px;
+}
+
+/* ------------------contactInfo-------------- */
+.contactInfo{
+    flex-direction: column !important;
+    width: 100%;
+    gap: 15px;
+}
+.contactInfo>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}   
+.contactInfo>div>input:nth-child(2){
+    width: 40%;
+}
+.contactInfo>div>input{
+    width: 25%;
+}
+/* ----------------inputs---------------- */
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: start;
+}
+.inputs input{
+    width: 100%;
+}
+.inputs textarea{
+    width: 100%;
+}
+@media screen and (max-width:1000px){
+    .main{
+        flex-direction: column;
+    }
+    .mainRight{
+        width: 100%;
+    }
+    .mainLeft{
+        width: 100%;
+
+    }
+}
+
+
+
+@media screen and (max-width:750px){
+    .selectButtons>div{
+        gap: 5px;
+    }
+    .selectButtons>div{
+        gap:20px ;
+    }
+}
+@media screen and (max-width:560px){
+    .days>div{
+        gap: 10px;
+    }
+}
+@media screen and (max-width:680px){
+    .header{
+        flex-direction: column-reverse;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .inputsDates{
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+@media screen and (max-width:480px){
+    .contactInfo>div{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .contactInfo>div>input{
+        width: 100% !important;
+    }
+    .inputsTecherAndMeetings{   
+        flex-direction: column;
+    }
+    .inputsTecherAndMeetings>div{
+        width: 100%;
+
+    }   
+
+    .header{
+        padding-bottom: 8px;
+    }
+    .header>div{
+        flex-wrap: wrap;
+    }
+    .header>div>h3{
+        font-size: 20px;
+    }
+    .selectButtons>div{
+        gap: 1px;
+    }
+    .selectButtons>div{
+        gap:5px ;
+    }   
+    .days>div{
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+@media screen and (max-width:310px){
+    
+
+    .selectButtons>div{
+        gap:2px ;
+    }   
+}

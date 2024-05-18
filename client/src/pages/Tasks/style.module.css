@@ -1,0 +1,7 @@
+.hiro{
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+

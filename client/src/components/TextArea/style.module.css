@@ -1,0 +1,10 @@
+.textarea {
+    width: 100%;
+    max-width: 100%;
+    border-radius:var(--radius);
+    box-shadow: var(--shadow);
+    text-align:right;
+    border: none;
+    width: 376px;
+    font-size: 20px;
+}

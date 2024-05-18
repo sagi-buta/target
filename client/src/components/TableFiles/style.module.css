@@ -1,0 +1,35 @@
+.tableContainer{
+    padding-bottom: 20px;
+    padding: 16px ;
+    width: 90%;
+    height: 60%;
+    align-items: start !important;
+    overflow: auto;
+}
+.tableSelf{
+    width: 100%;
+    background: var(--silver2);
+    border-collapse: collapse;
+    position: relative;
+    overflow: auto;
+    
+}
+.tableSelf td{
+    margin: 0;
+    padding: 8px;
+
+}
+
+.tableSelf>thead>tr{
+    font-weight:900;
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+    
+}
+.tableSelf>tbody :hover {
+    background-color: var(--silver);
+}
+
+
+

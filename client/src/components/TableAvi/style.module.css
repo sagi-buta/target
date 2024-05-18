@@ -1,0 +1,59 @@
+.tableContainer{
+    padding-bottom: 20px;
+    padding: 16px ;
+    width: 90%;
+    height: 60%;
+    align-items: start !important;
+    overflow: auto;
+}
+.tableContainer::-webkit-scrollbar {
+    display: none;
+}
+.tableSelf{
+    width: 100%;
+    background: var(--silver2);
+    border-collapse: collapse;
+    position: relative;
+}
+
+.tableSelf td{
+    margin: 0;
+    padding: 8px;
+}
+
+.tableSelf>thead>tr{
+    font-weight:900;
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+    
+}
+.tableSelf>tbody :hover {
+    background-color: var(--silver);
+}
+#statusNotActive{
+    color: rgb(197, 90, 90);
+    background: none;
+}
+#statusActive{
+    color: rgb(36, 146, 36);
+    background: none;
+}
+#changePassBtu{
+    background-color: var(--secondary);
+}
+
+.actionPopUpBTU{
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.actionLink{
+    text-decoration: none;
+    color: black;
+    transition: 0.15s;
+}
+.actionLink:hover,.actionPopUpBTU:hover{
+    color: var(--secondary);
+    transition: 0.15s;
+}

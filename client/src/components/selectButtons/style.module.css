@@ -1,0 +1,16 @@
+.select{
+    background-color: white;
+    display: inline;    
+    justify-content: center;
+    box-shadow: 4px 4px 21px -5px rgba(0,0,0,0.37);
+    transition: 0.3s;
+    width: fit-content;
+}
+.select:hover{
+    border: 1px solid blue;
+    box-shadow: none;
+    transition: 0.3s;
+}
+.activee{
+    background-color: rgb(140, 184, 226) !important;
+}
